@@ -3,7 +3,7 @@
 """
 import re
 import os
-from urllib.request import urlopen
+
 
 
 def start_end():
@@ -13,6 +13,7 @@ def start_end():
     url = 'http://www.python.org'
     print(url.startswith('http:'))
 
+    # 列出当前目录下的所有文件名
     filenames = os.listdir('.')
     print([name for name in filenames if name.endswith('.py')])
     # any内置函数: 只要有迭代集合中有一个元素满足条件就返回True
